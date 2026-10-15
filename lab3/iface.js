@@ -11,11 +11,11 @@ const iface = {
 }
 
 function introspect(){
-    let qwe = [];
+    let arr = [];
     for(let func in iface){
-        qwe.push([func, iface[func].length]);
+        arr.push([func, iface[func].length]);
     }
-    return qwe;
+    return arr;
 }
 
 console.log(introspect(iface));
